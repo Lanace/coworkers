@@ -42,11 +42,11 @@ export default function Login() {
 
   return (
     <div
-      className={`mt-6 flex flex-col items-center lg:mt-35-custom ${hasErrors ? 'md:mt-30-custom' : 'md:mt-25-custom'} ${hasErrors ? 'gap-6.5-custom md:gap-11.25-custom lg:gap-12.25-custom' : 'gap-6.25-custom md:gap-12.25-custom lg:gap-12'} `}
+      className={`lg:mt-35-custom mt-6 flex flex-col items-center ${hasErrors ? 'md:mt-30-custom' : 'md:mt-25-custom'} ${hasErrors ? 'gap-6.5-custom md:gap-11.25-custom lg:gap-12.25-custom' : 'gap-6.25-custom md:gap-12.25-custom lg:gap-12'} `}
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex w-85.75-custom flex-col gap-10 md:w-115-custom lg:w-115-custom"
+        className="w-85.75-custom md:w-115-custom lg:w-115-custom flex flex-col gap-10"
       >
         <div>
           <p className="text-2xl-medium md:text-2xl-medium mb-6 text-center text-text-primary md:mb-20 lg:mb-20 lg:text-4xl">
@@ -111,7 +111,7 @@ export default function Login() {
           </div>
         </div>
       </form>
-      <div className="flex w-85.75-custom flex-col items-center gap-4 md:w-115-custom lg:w-115-custom">
+      <div className="w-85.75-custom md:w-115-custom lg:w-115-custom flex flex-col items-center gap-4">
         <div className="flex w-full items-center text-text-primary">
           <div className="h-px flex-grow bg-border-tertiary"></div>
           <span className="text-lg-medium md:text-lg-regular lg:text-lg-regular mx-6 text-text-inverse">
